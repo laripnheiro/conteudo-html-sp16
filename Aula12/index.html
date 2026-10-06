@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title> Conteudo Aula 12 - HTML </title>
+        <style>
+
+            /*Alinhando divs com o Float*/
+
+            .div-float{
+                width: 100%;
+                overflow: auto;
+            }
+
+            .div-float div{
+                width: 32%;
+                padding-left: 1%; 
+                float: left;
+            }
+
+            .div-inline-block{
+                width: 100%;
+                overflow: auto;
+            }
+
+            .div-inline-block div{
+                display: inline-block;
+            }
+
+            /* Alinhando divs com o flex*/
+
+            .div-flex{
+                display: flex;
+            }
+
+            .div-flex div{
+                width: 33%;
+            }
+
+            /* Alinhando divs com o grid */
+
+            .div-grid{
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1> Divs no HTML </h1>
+
+        <h3> Vários Elementos Div </h3>
+
+        <div style="background-color: darkmagenta;">
+            <h2>Humpty Dumpty - AJR </h2>
+            <p>Durante a atividade de hoje vou colocar essa a letra desta musica.</p>
+            <p>Assim eu associo melhor a matéria.</p>
+        </div>
+
+        <div style="background-color: darkslateblue;">
+            <h2>Humpty Dumpty</h2>
+            <p>When Humpty Dumpty </p>
+            <p>When Humpty Dumpty went down</p>
+        </div>
+
+        <div style="background-color: darkcyan;">
+            <h2>He said screw it</h2>
+            <p>Imma smile right throught it</p>
+            <p>And I'll scream when no one's around</p>
+        </div>
+
+        <hr>
+
+        <h2>Alinando divs lado a lado</h2>
+
+        <h3> Utilizando o float</h3>
+
+        <div class="div-float">
+            <div style="background-color: darkmagenta;">
+            <h2>Something's wrong</h2>
+            <p>But I'm scared to look it up</p>
+            <p>If I do that</p>
+            </div>
+
+            <div style="background-color: darkslateblue;">
+            <h2>And no one has it</h2>
+            <p>I'll feel so alone</p>
+            <p>Something's wrong</p>
+            </div>
+
+            <div style="background-color: darkcyan;">
+            <h2> But don't pity me for long</h2>
+            <p>If you get sad Then I'll feel bad</p>
+            <p>That i told you at all</p>
+            </div>
+        </div>
+
+        <br>
+
+        <h3> Utilizando o inline-block </h3>
+
+        <div class="div-inline-block">
+            <div style="background-color: darkmagenta;">
+            <h2>I got friends</h2>
+            <p>In a lotta weird places</p>
+            <p>Wonder if they're gonna call</p>
+            </div>
+
+            <div style="background-color: darkslateblue;">
+            <h2>Depending what</h2>
+            <p>my face is</p>
+            <p>What my face is</p>
+            </div>
+
+            <div style="background-color: darkcyan;">
+            <h2>I could fake it</h2>
+            <p>I could move away or I could</p>
+            <p>I could suck it up and face it</p>
+            </div>
+        </div>
+
+        <br>
+
+        <h3>Utilizando o flex</h3>
+
+        <div class="div-flex">
+            <div style="background-color: darkmagenta;">
+            <h2>Humpty Dumpty</h2>
+            <p>When Humpty Dumpty</p>
+            <p>When Humpty Dumpty went down</p>
+            </div>
+
+            <div style="background-color: darkslateblue;">
+            <h2>He said screw it</h2>
+            <p>Imma smile right though it</p>
+            <p>And I'll scream when no one's around</p>
+            </div>
+
+            <div style="background-color: darkcyan;">
+            <h2>Humpty Dumpty</h2>
+            <p> When Humpty Dumpty</p>
+            <p>When Humpty Dumpty went down</p>
+            </div>
+        </div>
+
+        <br>
+
+        <h3> Utilizando o grid </h3>
+
+        <div class="div-grid">
+            <div style="background-color: darkmagenta;">
+            <h2>He said screw it</h2>
+            <p>There's a big crowd looking</p>
+            <p>Imma scream when no one</p>
+            </div>
+
+            <div style="background-color: darkslateblue;">
+            <h2>When no one</h2>
+            <p>When no one's around</p>
+            <p>Look outside</p>
+            </div>
+
+            <div style="background-color: darkcyan;">
+            <h2>They're making snowman</h2>
+            <p> On you street</p>
+            <p> Underneath your pillow</p>
+            </div>
+
+        </div>
+    </body>
+</html>
