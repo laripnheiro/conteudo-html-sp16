@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Conteudo Aula 14 - HTML </title>
+    </head>
+    <body>
+
+        <h1> JavaScript </h1>
+
+        <h3> Alterando valores de atributos com JavaScript </h3>
+
+        <img id="lamp-elemento" src="lightoff.gif" width="100" height="180"> 
+
+        <br>
+
+        <button onclick="controlarLampada(1)">Acender lâmpada</button>
+        <button onclick="controlarLampada(0)">Apagar lâmpada</button>
+
+        <script>
+            function controlarLampada(interruptor){
+
+                var nomeImagem;
+
+                if (interruptor == 0){
+                    nomeImagem = "lightoff.gif";
+                } else {
+                    nomeImagem = "lighton.gif";
+                }
+
+                document.getElementById("lamp-elemento").src = nomeImagem;
+            }
+        </script>
+    </body>
+</html>
